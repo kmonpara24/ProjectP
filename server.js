@@ -47,6 +47,10 @@ blogService
     console.error(error + ' this is from server.js');
   });
 
+// Route to display the home page
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'views/home.html'));
+});
 // Route to fetch all vehicles.
 app.get('/vehicles', (req, res) => {
   blogService
