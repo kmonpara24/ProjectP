@@ -19,7 +19,7 @@
   ============================
 */
 
-let blogService = require('./data-service.js');
+let blogService = require('./data-service');
 let path = require('path');
 
 const HTTP_PORT = process.env.PORT || 8080;
